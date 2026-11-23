@@ -7,6 +7,6 @@ void Resistor::set_value(double r)
 
 double Resistor::get_current() const
 {
-  // TODO
-  return 0.0;
+  
+  return get_value();
 }
