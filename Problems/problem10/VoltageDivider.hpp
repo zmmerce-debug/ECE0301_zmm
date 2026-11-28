@@ -9,7 +9,7 @@ class VoltageDivider : public Network
 {
 private:
 
-  int num_res
+  int num_res;
   void update_node_voltages();
 
 public:
