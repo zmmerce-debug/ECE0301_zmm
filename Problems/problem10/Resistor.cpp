@@ -1,13 +1,18 @@
 #include "Resistor.hpp"
 
+#include <stdexcept>
+
 void Resistor::set_value(double r)
 {
-  // TODO
+  
+  if (newval < 0){
+    throw std::invalid_atrgument("Ressitance cannot be neative");
+  }
+  Component::set_value(newval);
 }
 
 double Resistor::get_current() const
 {
-  
   return get_value();
 
   if (r == 0){
