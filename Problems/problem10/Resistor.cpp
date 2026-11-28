@@ -6,7 +6,7 @@ void Resistor::set_value(double r)
 {
   
   if (newval < 0){
-    throw std::invalid_atrgument("Ressitance cannot be neative");
+    throw std::invalid_argument("Ressitance cannot be neative");
   }
   Component::set_value(newval);
 }
