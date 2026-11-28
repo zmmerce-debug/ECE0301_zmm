@@ -2,7 +2,7 @@
 
 #include <stdexcept>
 
-void Resistor::set_value(double r)
+void Resistor::set_value(double newval)
 {
   
   if (newval < 0){
@@ -13,10 +13,11 @@ void Resistor::set_value(double r)
 
 double Resistor::get_current() const
 {
-  return get_value();
+  double r = get_value();
 
   if (r == 0){
     throw std::logic_error("Resistance is zero");
   }
+
   return get_voltage()/r;
 }
