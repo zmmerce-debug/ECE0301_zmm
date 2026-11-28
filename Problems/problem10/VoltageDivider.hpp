@@ -8,7 +8,9 @@
 class VoltageDivider : public Network
 {
 private:
-  // TODO: little to no here, only add private ones when necessary
+
+  int num_res
+  void update_node_voltages();
 
 public:
   VoltageDivider(double v, double res[], int num_res);
